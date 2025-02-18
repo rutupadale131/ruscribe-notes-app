@@ -1,0 +1,92 @@
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    padding: 10px 56px;
+    color:White;
+    width: 100vw;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+@media (max-width:748px) {
+    .navbar{
+        padding: 10px 20px;
+        width: 100vw;
+    }
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-button{
+    background-color: transparent;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-brand:hover{
+   scale: 1.1;
+}
+
+
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .menu-icon:hover{
+    scale: 1.1;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    
+    background-color: #252525;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background: #444444;
+  }
+
+  .home-link{
+    text-decoration: none;
+    color: #eaeaea;
+  }
+  

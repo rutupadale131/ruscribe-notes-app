@@ -1,0 +1,130 @@
+.create-note-bg{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    background-color: #121212;
+    min-height: 100vh;
+}
+
+.create-note-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.textarea-create-note{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid #292929;
+    max-width: 80vw;
+    font-size: 20px;
+    background-color: #1e1e1e;
+    border-radius: 2%;
+    box-sizing: border-box;
+    caret-color: #ccc;
+    color: #eaeaea;
+}
+
+
+.custom-input {
+    display: block;
+    font-size: 30px;
+    outline: none;
+    border:none;
+    text-align: center;
+    align-self: center;
+    right: 40px;
+    margin-top: 40px;
+    background-color: #121212;
+    caret-color: #ccc;
+    margin-bottom: 20px;
+    color: #eaeaea;
+    
+}
+
+
+.add-note-button {
+    width: 120px;
+    height: 36px;
+    background-color:#6a0dad;
+    color: #eaeaea;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.add-note-button:hover {
+    
+    scale: 0.9;
+}
+
+.add-note-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.6);
+}
+
+.back-button-container{
+    background-color: transparent;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 15px 0;
+}
+
+
+.back-button{
+    position: relative;
+    left:46px;
+    width: 40px;
+    height: 40px;  
+    padding-right: 20px;
+    background-color: transparent;
+    color: #eaeaea;
+    border:none;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 102;
+    top:30px;
+}
+
+.back-button:hover{
+    scale: 1.3;
+}
+
+.error-msg-createnote{
+    font-size: 12px;
+    color: #D32F2F;
+}
+
+@media (max-width:748px){
+    .create-note-bg{
+       width: 100vw;
+       min-height: 100vh;
+    }
+
+    .back-button-container{
+        background-color: #121212;
+        padding-bottom:20px ;
+    }
+
+    .back-button{
+        position: relative;
+        left:10px;
+    }
+}

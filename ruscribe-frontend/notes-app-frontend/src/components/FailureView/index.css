@@ -1,0 +1,33 @@
+.failure-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #121212;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.failure-text{
+    color: #eaeaea; 
+    position: fixed;
+    top: 420px;
+    font-size: 20px;
+}
+
+.error-icon{
+    position: fixed;
+    top: 300px;
+}
+
+@media screen and (max-width:600px) and (orientation:portrait){
+    .failure-text{
+        top:450px;
+        font-size: 18px;
+    }
+    .error-icon{
+        top:350px
+    }
+    
+}
